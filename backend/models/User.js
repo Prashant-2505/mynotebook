@@ -22,6 +22,7 @@ const UserSchema = new Schema({
         default: Date.now
     }
 });
-
+ 
 // we have to exports that scehma to use where user is the model name we give and then scemaname
-module.exports = mongoose.model('user', UserSchema)
+const User = mongoose.model('user',UserSchema)
+module.exports = User
