@@ -33,8 +33,9 @@ router.post('/createuser', [
         email: req.body.email,
         password: req.body.password,
     })
-    .then(user => res.json(user));   // here we send the the response as json usin arrow function inside .then  to tha console
-   
+    // we have to send response otherwise our server is not working properly
+     .then(user => res.json(user));   // here we send the the response as json usin arrow function inside .then  to the console
+     // sending user to console
 })
 
 module.exports = router
