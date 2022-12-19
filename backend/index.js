@@ -16,5 +16,5 @@ app.use('/api/notes', require('./routes/notes'))
 
 app.listen(port,()=>
 {
-    console.log(`server running at ${port}`)
+    console.log(`myNoteBokk backend server running at ${port}`)
 })
